@@ -8,9 +8,10 @@ const forcast = (latitude , longitude, callback)=>{
             callback('Unable to connect to weather services',undefined)
         } else if(body.error){
             callback('unable to find location', undefined) 
-        }else{
-            callback(undefined , 'the temp is ' + body.current.temperature
-                  + ' it feels like ' + body.current.feelslike + 'The humidity is ' + body.current.humidity)}
+        } else {
+            
+            callback(undefined ,body.current.weather_descriptions[0] + '. The temperature is ' + body.current.temperature
+                  + ' .It feels like ' + body.current.feelslike + '. The humidity is ' + body.current.humidity)}
     })
 
 
