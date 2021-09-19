@@ -10,7 +10,7 @@ const forcast = (latitude , longitude, callback)=>{
             callback('unable to find location', undefined) 
         }else{
             callback(undefined , 'the temp is ' + body.current.temperature
-                  + ' it feels like ' + body.current.feelslike)}
+                  + ' it feels like ' + body.current.feelslike + 'The humidity is ' + body.current.humidity)}
     })
 
 
