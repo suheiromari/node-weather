@@ -15,10 +15,12 @@ body {
 }
 
 footer {
+    
     color: #888888;
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
+    
 }
 
 header {
@@ -39,4 +41,8 @@ header a {
 
 .portrait {
     width: 250px;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
 }
